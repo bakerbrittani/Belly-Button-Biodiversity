@@ -1,0 +1,10 @@
+body {
+    background-color: bisque;
+    color: black;
+  }
+
+  .jumbotron {
+    background-image: url("../data/bacteria.jfif");
+    background-size: 100% 100%;
+    text-align: center;
+  }
