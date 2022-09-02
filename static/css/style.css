@@ -1,10 +1,11 @@
 body {
-    background-color: bisque;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.452);
+    color: rgb(56, 194, 38);
   }
 
   .jumbotron {
     background-image: url("../data/bacteria.jfif");
+    background-color: rgba(240, 248, 255, 0.205);
     background-size: 100% 100%;
     text-align: center;
   }

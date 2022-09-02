@@ -84,13 +84,13 @@ function buildCharts(sample) {
     var wfreq = metaResults.wfreq;
 
     // 8. Create the trace for the bar chart. 
-    var barData = [{
+    var barData = {
         x: xticks,
         y: yticks,
         type: 'bar',
         orientation: 'h',
         text: labels
-      }];
+      };
     // 9. Create the layout for the bar chart. 
     var barLayout = {
         title: "Top 10 Bacteria Cultures Found",
@@ -107,7 +107,7 @@ function buildCharts(sample) {
 // Bar and Bubble charts
 // Create the buildCharts function.
 // 1. Create the trace for the bubble chart.
-    var bubbleData = [{
+    var bubbleData = {
       x: ids,
       y: samval,
       text: labels,
@@ -116,7 +116,7 @@ function buildCharts(sample) {
         size: samval,
         color: ids,
         colorscale: 'Earth'
-      }}];
+      }};
   
       // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
@@ -132,7 +132,7 @@ function buildCharts(sample) {
 
 //Deliverable 3: Gauge Chart   
   // 4. Create the trace for the gauge chart.
-    var gaugeData =     [{
+    var gaugeData =     {
       domain: { x: [0, 2], y: [0, 1] },
       value: wfreq,
       title: { text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week" },
@@ -149,7 +149,7 @@ function buildCharts(sample) {
           { range: [8, 10], color: "green" },
         ]
       }
-    }]
+    }
       ;   
     
     // 5. Create the layout for the gauge chart.
